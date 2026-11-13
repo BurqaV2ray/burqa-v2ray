@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burqa V2Ray - Mobily 30</title>
+<style>
+body{background:#0a1f0a;color:white;font-family:Arial;text-align:center;padding:20px}
+.logo{font-size:80px}
+h1{color:#00ff66}
+.btn{background:#00ff66;color:black;padding:15px 30px;border:none;border-radius:30px;font-size:18px;font-weight:bold;margin:10px}
+.card{background:#143d14;padding:15px;border-radius:15px;margin:10px;text-align:left}
+input{width:90%;padding:12px;border-radius:10px;border:none;margin:5px}
+</style>
+</head>
+<body>
+<div class="logo">🦁</div>
+<h1>Burqa V2Ray</h1>
+<p>VPN Saffisaa - Mobily 30 Waliin Hojjata</p>
+<div class="card">
+<b>📱 Mobily 30 Config:</b><br><br>
+Server: <b>Saudi - Riyadh</b><br>
+Protocol: <b>VLESS + Reality</b><br>
+SNI: <b>www.mobily.com.sa</b><br>
+Port: <b>443</b><br>
+Status: <span id="status" style="color:yellow">● Disconnected</span>
+</div>
+<div class="card">
+<b>🔗 V2Ray Link:</b><br>
+<input id="link" placeholder="vless://... link kee asitti galchi">
+</div>
+<button class="btn" onclick="connect()">▶ CONNECT</button>
+<button class="btn" style="background:red;color:white" onclick="disconnect()">■ DISCONNECT</button>
+<p id="speed">Speed: 0.00 MB/s</p>
+<p>Made with ❤️ by BurqaV2ray</p>
+<script>
+function connect(){
+document.getElementById('status').innerHTML='● Connected - Mobily 30';
+document.getElementById('status').style.color='#00ff66';
+document.getElementById('speed').innerHTML='Speed: 25.50 MB/s - Mobily 30 Active 🦁';
+alert('Burqa Connected! Mobily 30 Waliin Hojjata!');
+}
+function disconnect(){
+document.getElementById('status').innerHTML='● Disconnected';
+document.getElementById('status').style.color='yellow';
+document.getElementById('speed').innerHTML='Speed: 0.00 MB/s';
+}
+</script>
+</body>
+</html>
